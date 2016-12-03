@@ -1,5 +1,8 @@
 Mon Carnet
-The Project is a simple Web application that can manage your contact list.
+
+
+
+This Project is a simple Web application that can manage your contact list.
 
 Version
 
