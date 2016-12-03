@@ -8,6 +8,10 @@ Version
 
   1.0.0
 
+Homepage
+
+  /login
+
 Tech
 
   -[Symfony3] - a popular PHP framework
