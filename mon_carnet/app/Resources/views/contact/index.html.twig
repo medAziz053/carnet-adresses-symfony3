@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+	<h2 class="page-header">Mes Contacts</h2>
+	<table class="table table-striped">
+		<thead> 
+			<tr> 
+				<th>#</th> 
+				<th>Nom</th>
+				<th>Prenom</th>
+				<th></th>
+			</tr> 
+		</thead> 
+		<tbody>
+			{% for contact in contacts %}
+
+			<tr>
+				<th scope="row">{{contact.id}}</th> 
+				<td>{{contact.Nom}}</td> 
+				<td>{{contact.Prenom}}</td>
+				<td>
+					<a href="/contact/details/{{contact.id}}" class="btn btn-success">Détails</a>
+					<a href="/contact/edit/{{contact.id}}" class="btn btn-default">Editer</a>
+					<a href="/contact/delete/{{contact.id}}" class="btn btn-danger">Supprimer</a>
+				</td>
+			</tr>
+
+			{% endfor %}
+		</tbody>
+	</table>
+{% endblock %}

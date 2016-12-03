@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+	<a class="btn btn-default" href="/"> Retournez à la liste de contacts</a>
+	<hr>
+		<h2 class="page-header">{{contact.Nom}} {{contact.Prenom}}</h2>
+		<ul class="list-group">
+			<li class="list-group-item">Téléphone: {{contact.Telephone}}</li>
+			<li class="list-group-item">Email: {{contact.Email}}</li>
+			<li class="list-group-item">Adresse: {{contact.Adresse}}</li>
+			<li class="list-group-item">Site Web: {{contact.SiteWeb}}</li>
+		</ul>
+
+{% endblock %}
